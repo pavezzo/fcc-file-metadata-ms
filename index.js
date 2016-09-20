@@ -14,4 +14,4 @@ app.post('/filesize', upload.single('file'), function(req, res) {
     res.json({ size: req.file.size })
 })
 
-app.listen(8000 || process.env.PORT)
+app.listen(process.env.PORT || 8000)
